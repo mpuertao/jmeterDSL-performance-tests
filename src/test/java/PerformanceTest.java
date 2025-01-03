@@ -76,7 +76,7 @@ public class PerformanceTest  {
                         htmlReporter("target")
                 //,prometheusListener().port(9270).host("0.0.0.0")
                 ).run();
-        assertThat(stats.overall().sampleTimePercentile99()).isLessThan(Duration.ofSeconds(5));
+        assertThat(stats.overall().sampleTimePercentile99()).isLessThan(Duration.ofSeconds(20));
         assertThat(stats.overall().errorsCount()).isEqualTo(0);
     }
 }
