@@ -35,7 +35,7 @@ jobs:
           paths:
             - target
       - store_artifacts:
-          path: target/**
+          path: target
           destination: results
 
 workflows:

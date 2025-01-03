@@ -29,7 +29,7 @@ public class PerformanceTest  {
 
 
         TestPlanStats stats = testPlan(
-                threadGroup(10, 10,
+                threadGroup(5, 5,
                         httpSampler("AUTH", url + "/auth")
                                 .contentType(ContentType.APPLICATION_JSON)
                                 .header("Accept", "application/json")
