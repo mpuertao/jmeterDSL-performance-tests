@@ -34,17 +34,9 @@ jobs:
           root: .
           paths:
             - target
-
-  publish-results:
-    executor: base
-    steps:
-      - attach_workspace:
-          at: ~/app
-      - run:
-          name: Publish Test Results
-          command: |
-            mkdir -p ~/circleci/results
-            cp -r target ~/circleci/results
+      - store-results:
+          path: target/**
+          destination: results
 
 workflows:
   version: 2
