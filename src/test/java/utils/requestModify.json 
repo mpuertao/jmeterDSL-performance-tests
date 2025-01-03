@@ -1,0 +1,11 @@
+{
+  "firstname" : "ISAAC",
+  "lastname" : "RESTREPO",
+  "totalprice" : 987,
+  "depositpaid" : true,
+  "bookingdates" : {
+    "checkin" : "2025-01-01",
+    "checkout" : "2025-02-01"
+  },
+  "additionalneeds" : "BREAKFAST"
+}

@@ -1,0 +1,11 @@
+{
+  "firstname" : "MAO",
+  "lastname" : "PUERTA",
+  "totalprice" : 128,
+  "depositpaid" : true,
+  "bookingdates" : {
+    "checkin" : "2025-01-01",
+    "checkout" : "2025-02-01"
+  },
+  "additionalneeds" : "pool"
+}
