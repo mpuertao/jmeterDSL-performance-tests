@@ -34,7 +34,7 @@ jobs:
           root: .
           paths:
             - target
-      - store-results:
+      - store_artifacts:
           path: target/**
           destination: results
 
