@@ -43,6 +43,3 @@ workflows:
   build-and-publish:
     jobs:
       - run-jmeterdsl
-      - publish-results:
-          requires:
-            - run-jmeterdsl
