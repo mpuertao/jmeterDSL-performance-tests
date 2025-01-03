@@ -33,3 +33,9 @@ jobs:
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Run Test with Maven
       run: mvn clean test
+
+    - name: Publish JMeter DSL HTML Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: jmeter-report
+        path: target/ 
