@@ -79,11 +79,12 @@ public class PerformanceTest  {
                         //autoStop().when(errors().total().greaterThan(0L)),
 
                         jtlWriter("target/jtls"),
-                        htmlReporter("target"),
-                        influxDbListener("http://localhost:8086/api/v2/write?bucket=jmeterdsl&org=T-EVOLVERS")
-                                .application("JMETER DSL")
-                                .token("123456789")
-                                .title("JMETER DSL")
+                        htmlReporter("target")
+                //,
+                        //influxDbListener("http://localhost:8086/api/v2/write?bucket=jmeterdsl&org=T-EVOLVERS")
+                          //      .application("JMETER DSL")
+                          //      .token("123456789")
+                           //     .title("JMETER DSL")
                 ).run();
         assertThat(stats.overall().sampleTimePercentile99()).isLessThan(Duration.ofSeconds(20));
         //assertThat(stats.overall().errorsCount()).isEqualTo(0);
